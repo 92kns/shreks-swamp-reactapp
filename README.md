@@ -18,4 +18,4 @@ Followed by entering a title, price, and description. Queries and Mutations are 
 
 ![items](./swamp_pics/shrek_item.jpg)
 
-The images in the right column are stock photos which I found distrubingly hilarious. Bottom left is one my own fine 30 second creation. Top left hasn't published yet because their is an asynchronous wait time for fetching images from Cloudinary after they've been submitted! (usually a few second wait)
+The images in the right column are stock photos which I found distrubingly hilarious. Bottom left is one my own fine 30 second creations. Top left hasn't published the image yet because there is an asynchronous wait time for fetching images from Cloudinary after they've been uploaded. (usually a few second wait)
