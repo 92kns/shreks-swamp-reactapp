@@ -3,7 +3,7 @@ Based on the WesBos Sick Fits fullstack webapplication... but with a *Shrek twis
 
 Not hosted anywhere yet (will be hosted on Heroku soon!)
 
-Minimal functionality, and will remain so to an extent. This was mainly for pedagogical reasons to get a better understanding of how some aspects of the fullstack process works (working with React components, handling Mutations/Queries client and servier side).
+Minimal functionality, and will remain so to an extent. This was mainly for pedagogical reasons to get a better understanding of how some aspects of the fullstack process works (working with React components, handling Mutations/Queries client and server side).
 
 #### Example pictures of the store!
 
