@@ -14,15 +14,36 @@ const Mutations = {
 
         return item;
 
-    }
-    // createDog(parent, args, ctx, info){
-    //     // create a dog
-    //     global.dogs = global.dogs || [];
-    //     const newDog = {name: args.name};
-    //     global.dogs.push(newDog);
-    //     return newDog;
-    //     // console.log(args);
-    // },
+    },
+    updateItem(parent, args, ctx, info) {
+        //  take a copy of the updates
+        const updates = {...args};
+        // remove id from updatesr
+        delete updates.id;
+        // update method
+        // db exposes prisma db
+        // refer to prisma.graphql file again for available methods
+        return ctx.db.mutation.updateItem({
+            data: updates,
+            where: {
+                id: args.id
+            },
+        }, 
+        info);
+
+    },
+
+    async deleteItem(parent, args, ctx, info) {
+        const where = {id: args.id};
+        // 1. find items
+        const item = await ctx.db.query.item({where},`{ id title}` );
+        // 2. check if they own that item or have permission
+        // TODO
+        // 3. delete
+        return ctx.db.mutation.deleteItem({where}, info);
+
+
+    },
 };
 
 module.exports = Mutations;

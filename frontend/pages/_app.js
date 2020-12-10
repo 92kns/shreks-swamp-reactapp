@@ -12,12 +12,12 @@ class MyApp extends App {
         if (Component.getInitialProps) {
             pageProps = await Component.getInitialProps(ctx);
         }
-        // this exposes query to the user
+        // this exposes query 
         pageProps.query = ctx.query;
         return {pageProps};
     }
     // above happens first before any rendering happens, exposing it for below
-    // a lot of examples of this on the next js examples 
+    // 
     render() {
         
         const {Component, apollo, pageProps} = this.props;
