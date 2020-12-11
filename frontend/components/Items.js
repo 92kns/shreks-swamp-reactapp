@@ -38,7 +38,7 @@ class Items extends Component {
                 <Query query = {ALL_ITEMS_QUERY}>
                     {({data, error, loading}) => {
                         if (loading) return <p>Loading...</p>;
-                        if (error) return <p>Error isssss {error.message}</p>;
+                        if (error) return <p>CAN NOT CONNECT TO SWAMP {error.message}</p>;
                         return <ItemsList>
                             {data.items.map(item => <Item item ={item} key = {item.id}/>)}
                              </ItemsList>

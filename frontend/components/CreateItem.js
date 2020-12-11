@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import {Mutation} from 'react-apollo';
+import {Mutation, Query} from 'react-apollo';
 import Form from './styles/Form';
 import gql from 'graphql-tag';
 import Router from 'next/router';
 import formatMoney from '../lib/formatMoney';
 import Error from './ErrorMessage';
+import {ALL_ITEMS_QUERY} from './Items';
+import { RenameRootFields } from 'graphql-tools';
+import { render } from 'nprogress';
 
 const CREATE_ITEM_MUTATION = gql`
     mutation CREATE_ITEM_MUTATION(
@@ -28,6 +31,8 @@ const CREATE_ITEM_MUTATION = gql`
     }
 
 `;
+
+
 
 class CreateItem extends Component {
     // constructor() {}
@@ -81,8 +86,42 @@ class CreateItem extends Component {
 
     };
 
+     hello =  () => {
+        // alert('hiii');
+       
+        
+        const {data, error, loading} = Query({ALL_ITEMS_QUERY});
+        alert('wtf');
+        alert(data.items.length);
+        // Query query = ({query ALL_ITEMS_QUERY})
+        //     {({data, error, loading}) =>
+        //     {
+        //         console.log('why cant go inside here')
+        //         alert(data.items.length)
+        //     }
+            
+    };
+
     render() {
+        return(
+        <Query query = {ALL_ITEMS_QUERY}>
+
+            {({data, error, loading}) => {
+                if (data.items.length > 6) {
+                <p>SORRY NO MORE ITEMS</p>;
+                // console.log('yeeeeet');
+                // alert('yote')
+                confirm('SORRY SWAMP IS FULL. DELETE ITEMS FROM ITEMS PAGE FIRST')
+                Router.push({
+                    pathname: '/items'
+                });
+                // return
+                }
+  
+            
         return (
+
+            
             <Mutation mutation = {CREATE_ITEM_MUTATION}
             variables = {this.state}>
 
@@ -90,6 +129,7 @@ class CreateItem extends Component {
             <Form
             
             onSubmit={async e => {
+                // this.hello()
                 // stop the form from submitting
                 console.log("Hello world   1!");
                 e.preventDefault();
@@ -163,6 +203,8 @@ class CreateItem extends Component {
             </Form>
             )}</Mutation>
         );
+    }}
+    </Query>);
     }
 }
 

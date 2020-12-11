@@ -12,7 +12,7 @@ class RejectCart extends Component {
         
              
             <button onClick = {() => {
-                if (confirm('Get your hands off my stuff!')) {
+                if (confirm('GET YOUR HANDS OFF MY STUFF!!!!!!!!!!!')) {
                     // do nothing
                 }
             }}>
