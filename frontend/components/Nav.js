@@ -5,15 +5,15 @@ import NavStyles from './styles/NavStyles';
 const Nav = () => (
     <NavStyles>
         <Link href = "/items">
-            <a>Items!</a>
+            <a>SWAMP INVENTORY!</a>
         </Link>
         <Link href = "/sell">
-            <a>Sell!</a>
+            <a>SELL!</a>
         </Link>
         <Link href = "/signup">
-            <a>Signup!</a>
+            <a>Sign up!</a>
         </Link>
-        <Link href = "/orders">
+        {/* <Link href = "/orders">
             <a>Orders!</a>
         </Link>
         <Link href = "/me">
@@ -21,7 +21,7 @@ const Nav = () => (
         </Link>
         <Link href = "/">
             <a>Hut!</a>
-        </Link>
+        </Link> */}
         
     </NavStyles>
 )

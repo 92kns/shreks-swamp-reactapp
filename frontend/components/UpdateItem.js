@@ -86,9 +86,24 @@ class UpdateItem extends Component {
                 variables = {this.state}>
 
                     {(updateItem, {loading,error}) => (
-                <Form onSubmit={e => this.updateItem(e,updateItem)}
+                // <Form onSubmit={e => 
+                //     {
+                //         this.updateItem(e,updateItem)}
+                //         Router.push({
+                //             pathname: '/items'
+                //         });
+                //     }
                 
-                >
+                // >
+
+                <Form onSubmit={async e => {
+                    this.updateItem(e,updateItem);
+                
+                    Router.push({
+                        pathname: '/items'
+                    });
+                 }}>
+
                     <Error error = {error}/>
                     <fieldset disabled= {loading} aria-busy={loading}>
                     
