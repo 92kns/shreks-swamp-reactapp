@@ -19,7 +19,7 @@ The store will reject you if there already are more than 6 items though, telling
 
 
 
-#### The item is then published on the Items page!
+#### The item is then published on the Items page (you may need to wait a bit and/or hit refresh on your browser)!
 
 ![items](./swamp_pics/shrek_item.jpg)
 
