@@ -1,7 +1,7 @@
 # Shrek's Swamp React Application
 Based on the WesBos Sick Fits fullstack web application... but with a *Shrek twist!*
 
-Currently hosted on heroku at this [link](https://shreks-swamp-next-prod.herokuapp.com/)
+Currently hosted with Heroku/Prisma at this [link](https://shreks-swamp-next-prod.herokuapp.com/) using whatever free tier services and features are available.
 
 Minimal functionality, and will remain so to an extent. This was mainly for pedagogical reasons to get a better understanding of how some aspects of the fullstack process works (working with React components, handling Mutations/Queries client and server side, etc.).
 
@@ -15,7 +15,7 @@ Followed by entering a title, price, and description. Queries and Mutations are 
 
 ##### Side Note:
 The store will reject you if there already are more than 6 items though, telling the user to delete some first.
-(I chose a limit to respect the limitations of the free-tier Cloudinary service) 
+(I chose a limit to respect the limitations of the free-tier services) 
 
 
 
