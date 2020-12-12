@@ -1,7 +1,7 @@
 # Shrek's Swamp React Application
-Based on the WesBos Sick Fits fullstack webapplication... but with a *Shrek twist!*
+Based on the WesBos Sick Fits fullstack web application... but with a *Shrek twist!*
 
-Not hosted anywhere yet (will be hosted on Heroku soon!)
+Currently hosted on heroku at this [link](https://shreks-swamp-next-prod.herokuapp.com/)
 
 Minimal functionality, and will remain so to an extent. This was mainly for pedagogical reasons to get a better understanding of how some aspects of the fullstack process works (working with React components, handling Mutations/Queries client and server side, etc.).
 
