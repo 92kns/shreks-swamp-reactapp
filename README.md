@@ -14,7 +14,7 @@ Followed by entering a title, price, and description. Queries and Mutations are 
 ![selling](./swamp_pics/shrek_sell.jpg)
 
 ##### Side Note:
-The store will reject you if there already are more than 6 items though, telling the user to delete some first.
+The store will reject you if there already are more than 12 items though, telling the user to delete some first.
 (I chose a limit to respect the limitations of the free-tier services) 
 
 
