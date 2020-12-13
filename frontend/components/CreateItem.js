@@ -107,7 +107,7 @@ class CreateItem extends Component {
         <Query query = {ALL_ITEMS_QUERY}>
 
             {({data, error, loading}) => {
-                if (data.items.length > 6) {
+                if (data.items.length > 12) {
                 <p>SORRY NO MORE ITEMS</p>;
                 // console.log('yeeeeet');
                 // alert('yote')
