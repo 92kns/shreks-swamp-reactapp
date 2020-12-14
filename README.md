@@ -1,7 +1,7 @@
 # Shrek's Swamp React Application
 Based on the WesBos Sick Fits fullstack web application... but with a *Shrek twist!*
 
-### Currently hosted with Heroku/Prisma at this [LINK](https://shreks-swamp-next-prod.herokuapp.com/) using whatever free tier services and features are available.
+### Currently hosted with Heroku/Prisma at this [LINK](https://shreks-swamp-next-prod.herokuapp.com/) using whatever free tier services and features are available. (if the servers have been 'asleep' for a while you may need to wait several seconds and/or refresh a couple times)
 
 Minimal functionality, and will remain so to an extent. This was mainly for pedagogical reasons to get a better understanding of how some aspects of the fullstack process works (working with React components, handling Mutations/Queries client and server side, etc.).
 
